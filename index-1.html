@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU MOD FREE FIRE MAX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #0f0;
+      text-align: center;
+    }
+
+h1 {
+  margin-top: 30px;
+  font-size: 26px;
+  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 3s linear infinite;
+}
+
+    /* Đăng nhập */
+    .login-container {
+      max-width: 320px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00bcd4;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* Loading */
+    #loading {
+      display: none;
+      color: #0f0;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    /* Menu */
+    #mod-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+.menu-button {
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc, #ffff00, #ff3300);
+  background-size: 1000% 1000%;
+  animation: rainbow 10s linear infinite;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+    /* Thông báo */
+    #toast {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      color: #0f0;
+      padding: 16px 25px;
+      border: 2px solid #0f0;
+      border-radius: 10px;
+      display: none;
+      z-index: 1000;
+    }
+
+    /* Quảng cáo */
+    .ad-popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .ad-box {
+      background: #111;
+      border: 2px solid #00ffff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      box-shadow: 0 0 15px #00ffff;
+      max-width: 90%;
+    }
+
+    .ad-box button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #00bcd4;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 MENU CONFIG [ ADMIN MENU: AnkLaPoNoRealLife]</h1>
+
+  <!-- Đăng nhập -->
+  <div id="login" class="login-container">
+    <input type="text" id="username" placeholder="Tài khoản">
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <button onclick="login()">Đăng Nhập</button>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading">Loading: <span id="progress">1%</span></div>
+
+  <!-- Menu chức năng -->
+  <div id="mod-menu">
+    <button class="menu-button">Đạn Thẳng</button>
+<button class="menu-button">Ghim Đầu</button>
+<button class="menu-button">MOD Skin</button>
+<button class="menu-button">Trick Shot</button>
+<button class="menu-button">Aimlock V2</button>
+<button class="menu-button">Aimbot V2</button>
+<button class="menu-button">Imazing Unlock</button>
+<button class="menu-button">Tối Ưu Rung Tâm</button>
+  </div>
+
+  <!-- Thông báo -->
+  <div id="toast"></div>
+
+  <!-- Quảng cáo -->
+  <div id="ad-popup" class="ad-popup">
+    <div class="ad-box">
+      <strong>📢 THÔNG BÁO:</strong><br>
+      👋 Anh Em Nào Cần Mua Menu Config Như Menu Config Này Mà Ngon Xịn Hơn Thì Nhắn Bên Zalo Cho Tôi Nha. 
+⬇️⬇️⬇️⬇️⬇️  <br>
+      <a href="https://zalo.me/0388500273" target="_blank" style="color:#00ffff;">modfreefiremax.vip</a><br>
+      Bên Mình Hỗ Trợ Tất Cả Thiết Bị Cho Anh Em Sài ADR Và IOS Nha. Hỗ Trợ Tất Cả Anh Em Sài Thiết Bị Đời Thấp Đến Đời Cao Nha ( Nên Anh Em Cần Thì Nhắn Cho Mình Bên Zalo Nha)
+      <br><br>
+      <button onclick="closeAd()">Đóng</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "anklapono" && password === "123456") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("loading").style.display = "block";
+        startLoading();
+      } else {
+        alert("Sai tài khoản hoặc mật khẩu!");
+      }
+    }
+
+    function startLoading() {
+      let percent = 1;
+      const interval = setInterval(() => {
+        document.getElementById("progress").innerText = percent + "%";
+        percent++;
+        if (percent > 100) {
+          clearInterval(interval);
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("mod-menu").style.display = "flex";
+          document.getElementById("ad-popup").style.display = "flex";
+        }
+      }, 30);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.innerText = message;
+      toast.style.display = "block";
+      setTimeout(() => {
+        toast.style.display = "none";
+      }, 2000);
+    }
+
+    function closeAd() {
+      document.getElementById("ad-popup").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
